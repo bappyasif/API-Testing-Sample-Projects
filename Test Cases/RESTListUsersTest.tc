@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>References:
+https://reqres.in/
+http://jsonpathfinder.com/</description>
+   <name>RESTListUsersTest</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a77b82bd-0145-4bc0-bb5e-fa5e65b31e43</testCaseGuid>
+</TestCaseEntity>

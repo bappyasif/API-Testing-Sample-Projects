@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>some methods been shown here, 
+How to handle GET API request
+How to handle POST API request
+How to handle PUT API request 
+How to handle DELETE API request
+you can alway find some more about it from 
+https://spring.io/understanding/REST
+https://reqres.in/</description>
+   <name>RESTHTTPMethodsTest</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ecea7fad-8ebc-4a17-8a58-f1f91d597e37</testCaseGuid>
+</TestCaseEntity>

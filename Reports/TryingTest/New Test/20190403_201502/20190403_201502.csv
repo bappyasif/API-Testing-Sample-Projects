@@ -1,0 +1,26 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+New Test,,,2019-04-03 20:15:11,2019-04-03 20:15:21,10.558s,PASSED
+,,,,,,
+Test Cases/RESTHTTPMethodsTest,,"some methods been shown here, 
+How to handle GET API request
+How to handle POST API request
+How to handle PUT API request 
+How to handle DELETE API request
+you can alway find some more about it from 
+https://spring.io/understanding/REST
+https://reqres.in/",2019-04-03 20:15:11,2019-04-03 20:15:19,8.108s,PASSED
+"sendRequestAndVerify(findTestObject(""RESTWebServiceRequest/ListUsers""))",,,2019-04-03 20:15:11,2019-04-03 20:15:16,5.117s,PASSED
+"sendRequestAndVerify(findTestObject(""RESTWebServiceRequest/DeleteUsers""))",,,2019-04-03 20:15:16,2019-04-03 20:15:17,0.807s,PASSED
+"sendRequestAndVerify(findTestObject(""RESTWebServiceRequest/CreateUsers""))",,,2019-04-03 20:15:17,2019-04-03 20:15:18,1.020s,PASSED
+"sendRequestAndVerify(findTestObject(""RESTWebServiceRequest/UpdateUsers""))",,,2019-04-03 20:15:18,2019-04-03 20:15:19,0.750s,PASSED
+,,,,,,
+Test Cases/RESTListUsersTest,,"References:
+https://reqres.in/
+http://jsonpathfinder.com/",2019-04-03 20:15:19,2019-04-03 20:15:21,2.029s,PASSED
+"sendRequest(findTestObject(""RESTWebServiceRequest/ListUsers""))",,,2019-04-03 20:15:19,2019-04-03 20:15:20,0.935s,PASSED
+"response = sendRequestAndVerify(findTestObject(""RESTWebServiceRequest/ListUsers""))",,,2019-04-03 20:15:20,2019-04-03 20:15:21,0.745s,PASSED
+"verifyElementPropertyValue(response, ""data[1].first_name"", ""Charles"")",,,2019-04-03 20:15:21,2019-04-03 20:15:21,0.020s,PASSED
+"verifyElementPropertyValue(response, ""data[2].id"", ""6"")",,,2019-04-03 20:15:21,2019-04-03 20:15:21,0.016s,PASSED
+"verifyElementsCount(response, ""data"", 3)",,,2019-04-03 20:15:21,2019-04-03 20:15:21,0.030s,PASSED
+"verifyElementsCount(response, ""data"", 2, OPTIONAL)",,purposefully failing to check validation error.,2019-04-03 20:15:21,2019-04-03 20:15:21,0.022s,PASSED
+"verifyResponseStatusCodeInRange(response, 100, 200)",,response code stats range checking for validation,2019-04-03 20:15:21,2019-04-03 20:15:21,0.007s,PASSED

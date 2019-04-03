@@ -1,0 +1,34 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+New Test,,,2019-04-03 20:44:43,2019-04-03 20:44:59,16.414s,PASSED
+,,,,,,
+Test Cases/RESTHTTPMethodsTest,,"some methods been shown here, 
+How to handle GET API request
+How to handle POST API request
+How to handle PUT API request 
+How to handle DELETE API request
+you can alway find some more about it from 
+https://spring.io/understanding/REST
+https://reqres.in/",2019-04-03 20:44:43,2019-04-03 20:44:50,7.125s,PASSED
+"sendRequestAndVerify(findTestObject(""RESTWebServiceRequest/ListUsers""))",,,2019-04-03 20:44:43,2019-04-03 20:44:48,4.699s,PASSED
+"sendRequestAndVerify(findTestObject(""RESTWebServiceRequest/DeleteUsers""))",,,2019-04-03 20:44:48,2019-04-03 20:44:49,0.669s,PASSED
+"sendRequestAndVerify(findTestObject(""RESTWebServiceRequest/CreateUsers""))",,,2019-04-03 20:44:49,2019-04-03 20:44:50,0.767s,PASSED
+"sendRequestAndVerify(findTestObject(""RESTWebServiceRequest/UpdateUsers""))",,,2019-04-03 20:44:50,2019-04-03 20:44:50,0.572s,PASSED
+,,,,,,
+Test Cases/RESTListUsersTest,,"References:
+https://reqres.in/
+http://jsonpathfinder.com/",2019-04-03 20:44:50,2019-04-03 20:44:53,2.430s,PASSED
+"sendRequest(findTestObject(""RESTWebServiceRequest/ListUsers""))",,,2019-04-03 20:44:50,2019-04-03 20:44:52,1.234s,PASSED
+"response = sendRequestAndVerify(findTestObject(""RESTWebServiceRequest/ListUsers""))",,,2019-04-03 20:44:52,2019-04-03 20:44:52,0.906s,PASSED
+"verifyElementPropertyValue(response, ""data[1].first_name"", ""Charles"")",,,2019-04-03 20:44:52,2019-04-03 20:44:52,0.021s,PASSED
+"verifyElementPropertyValue(response, ""data[2].id"", ""6"")",,,2019-04-03 20:44:52,2019-04-03 20:44:52,0.018s,PASSED
+"verifyElementsCount(response, ""data"", 3)",,,2019-04-03 20:44:52,2019-04-03 20:44:53,0.028s,PASSED
+"verifyElementsCount(response, ""data"", 2, OPTIONAL)",,purposefully failing to check validation error.,2019-04-03 20:44:53,2019-04-03 20:44:53,0.025s,PASSED
+"verifyResponseStatusCodeInRange(response, 100, 200)",,response code stats range checking for validation,2019-04-03 20:44:53,2019-04-03 20:44:53,0.010s,PASSED
+,,,,,,
+Test Cases/CalculatorTests/AditionSOAP,,,2019-04-03 20:44:53,2019-04-03 20:44:57,4.880s,PASSED
+"saveResponse = sendRequest(findTestObject(""CalculatorSOAPWebService/AdditionRequest""))",,Self Explanatory by its name Saving Response. Also remember even if you add some verification checks in your script it wont  bother checking unless you make it explicitly ask to verify to.,2019-04-03 20:44:53,2019-04-03 20:44:55,1.863s,PASSED
+"saveInto = sendRequestAndVerify(findTestObject(""CalculatorSOAPWebService/AdditionRequest""))",,"Saving Response to this variable called ""saveInto""",2019-04-03 20:44:55,2019-04-03 20:44:57,2.786s,PASSED
+"verifyElementPropertyValue(saveResponse, ""AddResponse.AddResult"", 11)",,,2019-04-03 20:44:57,2019-04-03 20:44:57,0.042s,PASSED
+,,,,,,
+Test Cases/GetBankDetailsTest,,,2019-04-03 20:44:57,2019-04-03 20:44:59,1.608s,PASSED
+"sendRequest(findTestObject(""SOAP/getBank""))",,,2019-04-03 20:44:58,2019-04-03 20:44:59,1.418s,PASSED
